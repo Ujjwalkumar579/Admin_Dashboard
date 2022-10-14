@@ -131,7 +131,7 @@ const Dashboard = ({ setLogin_auth }) => {
               <input
                 type="text"
                 name=""
-                id=""
+                id="searchField"
                 placeholder="Search by username or Firstname"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
@@ -142,7 +142,7 @@ const Dashboard = ({ setLogin_auth }) => {
             <Col lg={3}>
               <select
                 name=""
-                id=""
+                id="genderFilter"
                 className="form-control"
                 onChange={(e) =>
                   setfilterVal({
@@ -160,7 +160,7 @@ const Dashboard = ({ setLogin_auth }) => {
             <Col lg={3}>
               <select
                 name=""
-                id=""
+                id="statusFilter"
                 className="form-control"
                 onChange={(e) =>
                   setfilterVal({
@@ -216,31 +216,31 @@ const Dashboard = ({ setLogin_auth }) => {
                         filterVal.filterValForStatus ===
                         filterEle.dataCreated.status
                       ) {
-                        console.log("dono apply hoga then");
+
                         return filterEle;
                       } else if (
                         filterVal.filterValForGender === "" &&
                         filterVal.filterValForStatus === ""
                       ) {
-                        console.log("khali wala");
+
                         return filterEle;
                       } else if (
                         filterVal.filterValForGender ===
                         filterEle.dataCreated.gender
                       ) {
-                        console.log("gender");
+
                         return filterEle;
                       } else if (
                         filterVal.filterValForStatus ===
                         filterEle.dataCreated.status
                       ) {
-                        console.log("status wala");
+
                         return filterEle;
                       }
                     })
                     .map((val, i) => {
                       return (
-                        <tr>
+                        <tr key={i}>
                           <td>{i + 1}</td>
                           <td>{val.dataCreated.userName}</td>
                           <td>{val.dataCreated.firstName}</td>
