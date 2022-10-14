@@ -1,0 +1,20 @@
+.user_detail ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user_detail ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.user_detail ul li span:nth-child(1) {
+    font-weight: 700;
+}
+
+.user_detail ul li span:nth-child(2) {
+    text-transform: capitalize;
+}

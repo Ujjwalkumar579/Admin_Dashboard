@@ -1,0 +1,43 @@
+.user_data_list td {
+    text-transform: capitalize;
+}
+
+.action_btns ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.action_btns ul li {
+    width: fit-content;
+    list-style: none;
+}
+
+.action_btns ul li button {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+
+}
+
+.filter_row input,
+.filter_row select {
+    border-radius: 0px;
+
+}
+
+.filter_row input:focus,
+.filter_row select:focus {
+    box-shadow: none;
+}
+
+.buttons_row button {
+    border-radius: 0px;
+    background: #2d3436;
+    border: none;
+}
+
+.buttons_row button:focus {
+    box-shadow: none;
+}
