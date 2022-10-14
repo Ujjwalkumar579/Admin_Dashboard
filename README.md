@@ -18,8 +18,6 @@ password :- admin
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
-
 - ReactJS
 - Redux
 - Bootstrap
